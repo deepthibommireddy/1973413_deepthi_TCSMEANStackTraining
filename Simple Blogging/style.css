@@ -1,0 +1,20 @@
+
+h1{
+    color: whitesmoke;
+    text-align: center;
+
+    
+}
+
+.row{
+    column-gap: 30px;
+    row-gap: 30px;
+}
+h4{
+    text-align: center;
+    color: crimson;
+}
+body{
+    background-color: lightskyblue;
+    background-image: url(190218-mount-full-1440x810.jpg);
+}
