@@ -11,73 +11,81 @@
     
 
     <link href="style.css" rel="stylesheet">
-    <h1>Simply Blogging</h1>
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-  
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Add Blog <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link " href="#">Contact Us</a>
-            </li>
-          </ul>
-          
-        </div>
-      </nav>
 </head>
-<body class="container-fluid" onload="renderData()">
+<body onload="renderData()">
     
+  <nav class="navbar navbar-expand-lg navbar navbar-light " style="background-color: #d4d5d6;">
+  
+    <a class="navbar-brand" href="#">Simply Blogging</a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Add Blog <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link " href="#">Contact Us</a>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
     
-        <br/>
-        <br/>
-        <div class="container">
-            <form action="" class="form-group">
+
+<div class="backImage">
+</br>
+</br>
+  <div class="container">
+    <form action="" class="form-group">
+        
+        <div class="row justify-content-center">
+            <label class="col-2">Title</label>
+            <input type="text" id="title" class="form-control col-2"/>
+        </div><br/>
+        <div class="row justify-content-center">
+            <label class="col-2">Articles</label>
+            <textarea class="form-control col-2" type="text" id="desc" >
                 
-                <div class="row">
-                    <label class="col-2">Title</label>
-                    <input type="text" id="title" class="form-control col-2"/>
-                </div><br/>
-                <div class="row">
-                    <label class="col-2">Articles</label>
-                    <textarea class="form-control col-2" type="text" id="desc" >
-                        
-                    </textarea>
-                    
-                </div></br>
-                <div class="row">
-                    <label class="col-2">Add Image</label>
-                    <input type="file" id="imageId" class="form-control-file col-2"/>
-                    
-                </div>
-                <br/>
-                <div class="row">
-                    <button type="button" class="btn btn-primary col-1" onclick="addBlog()">Add Blog</button>
-                    
-                </div>
-            </form>
+            </textarea>
+            
+        </div></br>
+        <div class="row justify-content-center">
+            <label class="col-2">Add Image</label>
+            <input type="file" id="imageId" class="form-control-file col-2"/>
+            
         </div>
+        <br/>
+        <div class="row justify-content-center">
+            <button type="button" class="btn btn-primary col-1" onclick="addBlog()">Add Blog</button>
+            
+        </div>
+    </form>
+</div>
+
+
+<br/>
+
+
+<!-- <div id="main" class="grid-container">
+
+</div> -->
+<div class = "container">
+<div id="main" class="row">
+
+</div>
+</div>
+</div>
+
     
-        
-    <br/>
-    
-    
-    <!-- <div id="main" class="grid-container">
-        
-    </div> -->
-    
-    <div id="main" class="container-fluid row">
-        
-    </div>
+
 
     <script src="info.js"></script>  
 </body>

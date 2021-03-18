@@ -14,35 +14,7 @@ function addBlog(){
 }
 
 
-// function renderData(){
-//     console.log(dobj)
-//     var displayDiv=document.getElementById("main")
-//     displayDiv.innerHTML=""
-//     for(var i=0;i<dobj.length;i++){
 
-//         var newMainDiv=document.createElement("div")
-//         var newTitle = document.createElement("div")
-//         var newDesc = document.createElement("div")
-//         var newImage = document.createElement("img")
-
-//         newTitle.innerHTML = dobj[i].title
-//         newDesc.innerHTML = dobj[i].desc
-//         newImage.src = dobj[i].imageInfo
-        
-//         console.log( newTitle.innerHTML)
-//         newMainDiv.class="grid-child"
- 
- 
-
-//         newMainDiv.appendChild(newTitle)
-//         newMainDiv.appendChild(newDesc)
-//         newMainDiv.appendChild(newImage)
-//         displayDiv.appendChild(newMainDiv)
-        
-                 
-
-//     }
-// }
 
 
 

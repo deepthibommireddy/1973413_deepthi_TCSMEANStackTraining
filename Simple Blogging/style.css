@@ -17,3 +17,9 @@ body{
     
     background-image: url(190218-mount-full-1440x810.jpg);
 }
+
+.backImage{
+    background-image: url('BackGroundImg.jpg');
+    background-size: contain;
+    /* background-color: #d4d5d6; */
+}
