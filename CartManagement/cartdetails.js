@@ -37,7 +37,7 @@ function additems() {
         newDesc.innerHTML = productDetailsArr[i].itemtitle;
         newImage.src = productDetailsArr[i].itemPic;
         newMainDiv.classList.add('card', 'bg-light');
-        newMainDiv.style.width = "20%";
+        newMainDiv.style.width = "25%";
         newCardDiv.className = "card-body";
         newDesc.className = "card-title";
         newTitle.className = "card-text";

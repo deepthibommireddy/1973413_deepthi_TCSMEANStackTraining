@@ -1,9 +1,4 @@
-.centerclass {
-    margin: auto;
-    
-    border: 3px solid #222221;
-    
-  }
+
   table, th, td {
     border: 3px solid;
     border-collapse: collapse;
@@ -41,5 +36,5 @@
   .row{
     column-gap: 30px;
     row-gap: 30px;
-}
+ }
   
