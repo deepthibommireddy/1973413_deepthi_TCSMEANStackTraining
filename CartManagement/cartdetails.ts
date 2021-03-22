@@ -19,7 +19,7 @@ const productDetailsArr: productDetails[] = [
     
     {id:3,itemprice:199.99,itemtitle:"Apple AirPods (2nd Gen) with Wireless Charging Case",itemPic:"airpods.jpg"},
     {id:4,itemprice:498.00,itemtitle:"SAMSUNG 58 Class 4K Crystal UHD (2160P) LED Smart TV with HDR ",itemPic:"samsung.jpeg"} ,
-    {id:3,itemprice:699.99,itemtitle:"iphone11",itemPic:"iphone11.jpg"},
+    {id:5,itemprice:699.99,itemtitle:"iphone11",itemPic:"iphone11.jpg"},
     {id:6,itemprice:1099.99,itemtitle:"LG - 4.5 Cu. Ft. 12-Cycle Front-Loading Smart Wi-Fi Washer",itemPic:"washing.jpg"},
     {id:7,itemprice:9999.99,itemtitle:"KitchenAid 42 Inch Wide 24.2 Cu. Ft. Energy Star Rated Built-In French Door Refrigerator ",itemPic:"fridge.jpg"}
 
@@ -41,12 +41,12 @@ function additems(){
 
     for(var i=0;i<productDetailsArr.length;i++){
 
-        var newMainDiv  =document.createElement("div")
-        var newCardDiv = document.createElement("div")
-        var newTitle : HTMLElement = document.createElement("h4")
-        var newDesc : HTMLElement = document.createElement("p")
-        var newImage : HTMLImageElement= document.createElement("img")
-        var addButton=document.createElement("button")
+        let newMainDiv  =document.createElement("div")
+        let newCardDiv = document.createElement("div")
+        let newTitle : HTMLElement = document.createElement("h4")
+        let newDesc : HTMLElement = document.createElement("p")
+        let newImage : HTMLImageElement= document.createElement("img")
+        let addButton=document.createElement("button")
         addButton.innerHTML = "Add"
 
         newTitle.innerHTML = String(productDetailsArr[i].itemprice)
@@ -78,14 +78,14 @@ function additems(){
         (function (_td: HTMLElement) {
             addButton.addEventListener('click', function(){
                 onAddCartButton(_td.id)
-                event.preventDefault()
+                
                 
             });
         })(addButton);
     }
                 
     function onAddCartButton(id:String){
-        for(var i =0;i< productDetailsArr.length; i++){
+        for(let i =0;i< productDetailsArr.length; i++){
             if(Number(id) === productDetailsArr[i].id){
                 cartItemCount += 1
                 console.log( "Price -->  "+ productDetailsArr[i].itemprice + "   item -->"+ productDetailsArr[i].itemtitle)
@@ -115,14 +115,14 @@ function checkout(){
         var newRow: HTMLTableRowElement | undefined = body?.insertRow((<any>body).length);  
 
         
-        var cell1 = newRow.insertCell(0);         
+        let cell1 = newRow.insertCell(0);         
          cell1.innerHTML=dobj[i].itemtitle;                 
 
-         var cell2 = newRow.insertCell(1);           
- cell2.innerHTML=dobj[i].itemprice;    
+         let cell2 = newRow.insertCell(1);           
+         cell2.innerHTML=dobj[i].itemprice;    
     }
     let total = 0
-    for(var i=0;i<dobj.length;i++){
+    for(let i=0;i<dobj.length;i++){
         total+=Number(dobj[i].itemprice);
     }
     console.log(total)
