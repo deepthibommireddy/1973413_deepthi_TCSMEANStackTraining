@@ -6,6 +6,7 @@ function addBlog(){
     blogObj.title = document.getElementById("title").value;
     blogObj.desc = document.getElementById("desc").value;
     blogObj.imageInfo=document.getElementById("imageId").files[0].name;
+	console.log("obj"+blogObj)
     arr.push(blogObj)
     localStorage.setItem("BlogInfo",JSON.stringify(arr))
        

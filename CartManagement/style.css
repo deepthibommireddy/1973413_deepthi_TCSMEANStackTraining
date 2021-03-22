@@ -1,0 +1,45 @@
+.centerclass {
+    margin: auto;
+    
+    border: 3px solid #222221;
+    
+  }
+  table, th, td {
+    border: 3px solid;
+    border-collapse: collapse;
+    padding: 10px;
+    width: 50%;
+    border-color: floralwhite;
+    color:white;
+    text-align:center
+     }
+     table{
+      margin-left: auto;
+      margin-right: auto;
+   
+     }
+  th{
+    color: white;
+    background-color: #6077f8;
+  }
+  #cartList tr:nth-child(even){background-color: #9bbeec;}
+
+  #cartList tr:nth-child(odd) {background-color: rgb(178, 194, 214);}
+  #lb1,#lb2{
+    text-align: center;
+    color:red
+    
+    
+  }
+  h1{
+    text-align: center;
+    color:royalblue
+  }
+   
+   
+
+  .row{
+    column-gap: 30px;
+    row-gap: 30px;
+}
+  
