@@ -1,0 +1,33 @@
+
+<div onload="welcome()" class="text-info">
+    <h1>My Portfolio</h1>
+    <h2>Welcome {{msg}}</h2>
+    <form [formGroup]="loginRef" (ngSubmit)="updateInfo()">
+        <label>Contact Name</label>
+        <input type="text" formControlName="contact" /><br/>
+        <label>Phone No</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" formControlName="phone" /><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" value="save" class="btn btn-primary" />
+        
+        
+    </form>
+    <br/>
+</div>
+
+    <label *ngIf="flag==true" class="text-warning">Contact Details</label> 
+    <table border="1" class="text-success">
+        
+        <tr *ngIf="flag==true">
+            <th>Contact Name</th>
+            <th>Phone No</th>
+            
+        </tr>
+       <tr *ngFor="let emp of tableinfo">
+            <td>{{emp.contact}}</td>
+            <td>{{emp.phone}}</td>
+            
+        </tr>
+    </table>
+    <button type="button" class="btn btn-link " (click)="logout()">Logout</button>
+
+

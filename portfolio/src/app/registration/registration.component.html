@@ -1,0 +1,21 @@
+<div>
+    <h3>Registration Form</h3><br/>
+    <a routerLink="/login" class="ro">Login</a>
+    <form #userRef="ngForm" (ngSubmit)="saveData(userRef.value)" class="Container-fluid formClass">
+        
+        <Label>First Name </Label>&nbsp;&nbsp;
+        <input type="text" name="fname" ngModel/><br/>
+        <Label>Last Name </Label>&nbsp;&nbsp;
+        <input type="text" name="lname" ngModel/><br/>
+        <Label>User Name </Label>&nbsp;&nbsp;
+        <input type="text" name="uname" ngModel/><br/>
+        <Label>Password </Label>&nbsp;&nbsp;
+        <input type="password" name="pwd" ngModel/><br/>
+        <input type="submit" value="Register" class="btn btn-success" id="ab"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Reset" class="btn btn-danger" id="ab"/>
+        
+       
+    </form>
+    
+
+</div>
