@@ -1,0 +1,79 @@
+<div>
+    <mat-grid-list cols="2" rowHeight="400px">
+        <mat-grid-tile colspan="1" rowspan="1">
+            
+            <form #empRef="ngForm" (ngSubmit)="storeTask(empRef.value)" class="text-inside-grid">
+                <h2>To-do-tasks</h2>
+                <mat-form-field >
+                    <mat-label>ID</mat-label>
+                    <input matInput type="text" name="id" ngModel/>
+                </mat-form-field><br/>
+                
+                <mat-form-field>
+                    <mat-label>Name</mat-label>
+                    <input matInput type="text" name="name" ngModel/>
+                </mat-form-field><br/>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Task</mat-label>
+                    <textarea matInput placeholder="..." name="taskarea" ngModel></textarea>
+                  </mat-form-field>
+                <br/>
+                <mat-form-field appearance="fill">
+                    <mat-label>Dead Line</mat-label>
+                    <input matInput [matDatepicker]="picker" name="deadline" ngModel>
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+                  <br/>
+                
+                   
+                  <button mat-raised-button color="primary" type="submit">Submit</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button mat-raised-button color="warn" type="reset">Reset</button> 
+
+            </form>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            
+            <table >
+<thead><h1>To-do-List</h1></thead>
+                <ng-container matColumnDef = "id" >
+                    <th mat-header-cell > ID</th>
+                    
+                   
+                        
+                    </ng-container>
+                    <ng-container matColumnDef = "name" >
+                        <th mat-header-cell > Name</th>
+                        
+                            
+                        
+                    </ng-container>
+                    <ng-container matColumnDef = "taskarea">
+                        <th mat-header-cell > Task</th>
+                       
+                    </ng-container>
+                    <ng-container matColumnDef = "deadline">
+                        <th mat-header-cell > DeadLine</th>
+                        
+                    </ng-container>
+                    <tr  *ngFor="let e of taskArr">
+                        <td class="mat-cell">{{e.id}}</td>
+                        <td class="mat-cell">{{e.name}}</td>
+                        <td class="mat-cell">{{e.taskarea}}</td>
+                        <td class="mat-cell">{{e.deadline}}</td></tr>
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+                </table>
+              
+        </mat-grid-tile>
+        
+      </mat-grid-list>
+      
+        
+        
+           
+       
+    
+</div>

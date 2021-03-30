@@ -1,0 +1,26 @@
+.text-inside-grid {
+    position: absolute;
+    left: 5px;
+
+  }
+  .mat-grid-tile {
+    border: solid 2px #000;
+}
+table,tr{
+border:solid 1px blue;
+border-spacing: 2px;
+
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.mat-cell { border: 2px single black collapse }
+tr:nth-child(even){background-color: #9bbeec;}
+th{
+  background-color:darkkhaki ;
+}
+h2{color:red
+}
+
