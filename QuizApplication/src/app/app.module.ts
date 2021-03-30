@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DisplayQComponent } from './display-q/display-q.component';
 import { FormsModule } from '@angular/forms';
-import { ScoreComponent } from './score/score.component';
+
 import { StartPageComponent } from './start-page/start-page.component';
 
 
@@ -15,7 +15,7 @@ import { StartPageComponent } from './start-page/start-page.component';
   declarations: [
     AppComponent,
     DisplayQComponent,
-    ScoreComponent,
+    
     StartPageComponent
   ],
   imports: [
