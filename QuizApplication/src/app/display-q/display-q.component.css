@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+button
+{
+    text-align: center;
+}
+.fail{
+    color:red
+    
+}
+.pass{
+    color:green
+}

@@ -1,0 +1,46 @@
+<form #questionTest="ngForm" novalidate class="border border-primary" *ngIf="flag==false" >
+    <h1>Welcome to Quiz Application</h1><br/><br/><hr/>
+        <div *ngFor="let ques of questions" class="container">
+            <h4> {{ques.id}}.{{ques.question}}</h4>
+            
+            <input type="radio" name="{{ques.id}}" value="a" [(ngModel)]="ques.selected" />
+           {{ques.a}}<br/>
+            
+            <input type="radio" name="{{ques.id}}" value="b" [(ngModel)]="ques.selected"/>
+            {{ques.b}}<br/>
+            <input type="radio" name="{{ques.id}}" value="c" [(ngModel)]="ques.selected" />
+            {{ques.c}}<br/>
+            <input type="radio" name="{{ques.id}}" value="d" [(ngModel)]="ques.selected"/>
+            {{ques.d}}<br/><hr/>
+        
+         
+            </div>
+               
+
+</form>
+<div style="text-align:center;" class="container">
+<button type="button" class="btn btn-success btn-lg " (click)="submitTest()" *ngIf="flag==false">Submit</button>&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-danger btn-lg " (click)="submitTest()" *ngIf="flag==false">Reset</button>
+</div>
+<div *ngIf="flag==true" class="container">
+    <h1 *ngIf="msg==false" class="fail">You Failed the Quiz</h1>
+        <h1 *ngIf="msg==true" class="pass">You Passed the Quiz</h1>
+        <h1>Score:{{rightAnswer}}</h1>
+        <h1>Total Answered:{{totalAnswered}}</h1>
+        
+        <input type="button" value="View Answers" (click)="viewans()" class="container btn btn-info btn-lg "/>
+</div>
+<div *ngIf="flag1==true" class="container" >
+<div *ngFor="let ques of questions" >
+    <div>{{ques.id}}.{{ques.question}}</div>
+    <div [style.color]="((ques.selected == ques.answer)&& ( ques.answer=='a'))?'green':  ((ques.answer=='a'))?'green': 'red'">a) {{ques.a}}</div>
+    <div [style.color]="((ques.selected == ques.answer)&& ( ques.answer=='b'))?'green': ((ques.answer=='b'))?'green': 'red'">b) {{ques.b}}</div>
+    <div [style.color]="((ques.selected == ques.answer)&& ( ques.answer=='c'))?'green':  ((ques.answer=='c'))?'green': 'red'">c) {{ques.c}}</div>
+    <div [style.color]="((ques.selected == ques.answer)&& ( ques.answer=='d'))?'green':  ((ques.answer=='d'))?'green': 'red'">d) {{ques.d}}</div>
+    <div ><i>Your Answer: {{ques.selected}}</i></div>
+    <div><i>Right Answer:  {{ques.answer}}</i> </div>
+    <hr>
+  
+</div>
+</div>
+

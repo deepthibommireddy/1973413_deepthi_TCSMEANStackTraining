@@ -1,0 +1,91 @@
+[{
+  "id": 1,
+  "question": "How would you display a list of Employees on a webpage along with where they were in the list?",
+  "a": "Loop through and print the index",
+  "b": "Loop through and print the employees",
+  "c": "Loop through and print the index and the employee",
+  "d": "Pass both the index and the employee to a web service",
+  "answer": "c"
+},
+{
+  "id": 2,
+  "question": "Where would you put it?",
+  "a": "In the Component",
+  "b": "In the Template",
+  "c": "In the Injectable decorator",
+  "d": "In the module",
+  "answer": "c"
+},
+{
+  "id": 3,
+  "question": "Angular Js is based on",
+  "a": "MVC Architecture",
+  "b": "Decorator pattern",
+  "c": "MVVM Architectural pattern",
+  "d": "Observer Pattern",
+  "answer": "c"
+},
+{
+  "id": 4,
+  "question": "AngularJS expressions are written using",
+  "a": "(expression)",
+  "b": "{{expression}}",
+  "c": "{{{expression}}}",
+  "d": "[expression]",
+  "answer": "b"
+},
+{
+  "id": 5,
+  "question": "Which directive initializes an AngularJS application?",
+  "a": "ng-init",
+  "b": "ng-app",
+  "c": "ngSrc",
+  "d": "ng-start",
+  "answer": "b"
+},
+{
+  "id": 6,
+  "question": "Which of following is not valid AngularJs Filter",
+  "a": "lowercase",
+  "b": "orderby",
+  "c": "currency",
+  "d": "email",
+  "answer": "d"
+},
+{
+  "id": 7,
+  "question": "How do you share data between controller and view?",
+  "a": " using Model",
+  "b": " using services",
+  "c":"using factory",
+  "d":"using $scope",
+ 
+  "answer": "b"
+},{
+  "id": 8,
+  "question": "The . . . . . decorator allows us to define the pipe name that is globally available for use in any template in the across application.",
+  "a": "pipeName",
+  "b": "pipeDeco",
+  "c": "Pipe",
+  "d": "none",
+  "answer": "c"
+},
+{
+  "id": 9,
+  "question": "Observables help you manage . . . . . . . . data.",
+  "a": "synchronous",
+  "b": "asynchronous",
+  "c": "Both asynchronous & synchronous",
+  "d": "None of above",
+  "answer": "b"
+},
+{
+  "id": 10,
+  "question": "Which of following is not valid AngularJs Filter",
+  "a": "lowercase",
+  "b": "orderby",
+  "c": "currency",
+  "d": "email",
+  "answer": "d"
+}
+]
