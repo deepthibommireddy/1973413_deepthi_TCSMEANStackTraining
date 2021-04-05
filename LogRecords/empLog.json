@@ -1,0 +1,52 @@
+[
+  
+  
+    {
+      "fname": "wasd",
+      "lname": "w",
+      "gender": "m",
+      "email": "w",
+      "date": "2021-4-5",
+      "time": "10:44:39"
+    },
+    {
+      "fname": "harsh",
+      "lname": "konda",
+      "gender": "male",
+      "email": "h@fff.com",
+      "date": "2021-4-5",
+      "time": "10:49:23"
+    },
+    {
+      "fname": "vihaan",
+      "lname": "konda",
+      "gender": "male",
+      "email": "v@fgfd.com",
+      "date": "2021-4-5",
+      "time": "10:52:43"
+    },
+    {
+      "fname": "jhansi",
+      "lname": "bommi",
+      "gender": "female",
+      "email": "dfsd@dsfsd.cx",
+      "date": "2021-4-5",
+      "time": "14:8:57"
+    },
+    {
+      "fname": "abc",
+      "lname": "xyz",
+      "gender": "m",
+      "email": "dsfs@dfd.com",
+      "date": "2021-4-5",
+      "time": "14:11:18"
+    },
+    {
+      "fname": "ravi",
+      "lname": "k",
+      "gender": "m",
+      "email": "sds@df.xom",
+      "date": "2021-4-5",
+      "time": "14:17:21"
+    }
+  ]
