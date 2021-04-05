@@ -31,7 +31,7 @@ fs.writeFile("emplog.json",empString,(err)=> {
 debugger;
 })
 module.exports.fname=fname
-module.exports.lname=fname
-module.exports.age=fname
-module.exports.email=fname
+module.exports.lname=lname
+module.exports.gender=gender
+module.exports.email=email
 module.exports.emp=emp1

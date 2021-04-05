@@ -1,6 +1,4 @@
 [
-  
-  
     {
       "fname": "wasd",
       "lname": "w",
@@ -48,5 +46,29 @@
       "email": "sds@df.xom",
       "date": "2021-4-5",
       "time": "14:17:21"
+    },
+    {
+      "fname": "reema",
+      "lname": "l",
+      "gender": "f",
+      "email": "ldf@dfd.com",
+      "date": "2021-4-5",
+      "time": "14:27:12"
+    },
+    {
+      "fname": "teja",
+      "lname": "sri",
+      "gender": "female",
+      "email": "teja@mial.com",
+      "date": "2021-4-5",
+      "time": "14:30:57"
+    },
+    {
+      "fname": "sri",
+      "lname": "konda",
+      "gender": "male",
+      "email": "sri@df.com",
+      "date": "2021-4-5",
+      "time": "14:31:48"
     }
   ]
